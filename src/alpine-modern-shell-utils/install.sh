@@ -28,14 +28,14 @@ elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} >/dev/null 2>&1; then
 fi
 
 echo "Step 3, Add to the apk repository list"
-if [! grep -q edge/community /etc/apk/repositories]; then
+#if [! grep -q edge/community /etc/apk/repositories]; then
     echo "https://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
-fi
-if [! grep -q edge/testing /etc/apk/repositories]; then
+#fi
+#if [! grep -q edge/testing /etc/apk/repositories]; then
     echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
-fi
+#fi
 
-echo "Step 3, define helper functions"
+echo "Step 4, define helper functions"
 apk_get_update()
 {
       echo "Running apt-get update..."
@@ -52,14 +52,14 @@ check_packages() {
 
 export DEBIAN_FRONTEND=noninteractive
 
-echo "Step 4, check if architecture is supported"
+echo "Step 5, check if architecture is supported"
 architecture="$(uname -m)"
 if [ "${architecture}" != "amd64" ] && [ "${architecture}" != "x86_64" ] && [ "${architecture}" != "arm64" ] && [ "${architecture}" != "aarch64" ]; then
     echo "(!) Architecture $architecture unsupported"
     exit 1
 fi
 
-echo "Step 5, install packages"
+echo "Step 6, install packages"
 check_packages bat eza lsd delta dust duf broot fd ripgrep fzf mcfly 
 
 echo "Done!"
