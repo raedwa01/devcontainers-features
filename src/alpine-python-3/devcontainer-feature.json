@@ -1,0 +1,17 @@
+{
+  "name": "alpine-python-3",
+  "id": "alpine-python-3",
+  "version": "0.0.1",
+  "description": "Installs Python 3 on alpine ",
+  "documentationURL": "https://github.com/raedwa01/devcontainers-features/tree/main/src/alpine-python-3",
+  "options": {
+    "installTools": {
+      "type": "boolean",
+      "default": false,
+      "description": "Install Python DevTools"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/raedwa01/features/alpine-bash"
+]
+}

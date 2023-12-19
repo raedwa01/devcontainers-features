@@ -1,0 +1,9 @@
+{
+  "name": "alpine-gnupg",
+  "id": "alpine-gnupg",
+  "version": "0.0.1",
+  "description": "Installs gnupg on alpine",
+  "documentationURL": "https://github.com/raedwa01/devcontainers-features/tree/main/src/alpine-gnupg",
+  "options": {
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "alpine-modern-shell-utils",
+  "id": "alpine-modern-shell-utils",
+  "version": "0.0.1",
+  "description": "Installs Modern Shell Utils on alpine ",
+  "documentationURL": "https://github.com/raedwa01/devcontainers-features/tree/main/src/alpine-modern-shell-utils",
+  "options": {
+  },
+  "installsAfter": [
+    "ghcr.io/raedwa01/features/alpine-bash"
+]
+}
