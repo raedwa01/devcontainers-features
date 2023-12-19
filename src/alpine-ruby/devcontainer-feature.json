@@ -1,7 +1,7 @@
 {
   "name": "alpine-ruby",
   "id": "alpine-ruby",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Installs Ruby on alpine ",
   "documentationURL": "https://github.com/raedwa01/devcontainers-features/tree/main/src/alpine-ruby",
   "options": {

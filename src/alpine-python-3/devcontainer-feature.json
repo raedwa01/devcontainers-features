@@ -1,7 +1,7 @@
 {
   "name": "alpine-python-3",
   "id": "alpine-python-3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Installs Python 3 on alpine ",
   "documentationURL": "https://github.com/raedwa01/devcontainers-features/tree/main/src/alpine-python-3",
   "options": {
