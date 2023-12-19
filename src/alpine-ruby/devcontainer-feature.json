@@ -7,6 +7,6 @@
   "options": {
   },
   "installsAfter": [
-    "ghcr.io/raedwa01/features/alpine-bash"
+    "ghcr.io/devcontainers/features/common-utils"
 ]
 }
